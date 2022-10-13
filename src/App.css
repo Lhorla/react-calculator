@@ -1,0 +1,91 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+}
+
+.container {
+  padding: 10px;
+  border-radius: 1em;
+  height: 360px;
+  width: 400px;
+  margin: auto;
+  background: #dbdffd;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.result {
+  margin-bottom: 1rem;
+  height: 50px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  text-align: end;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
+.output {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: 1px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.buttons:hover {
+  background-color: #e0e0e0;
+}
+
+.buttons:active {
+  background-color: #bdbdbd;
+}
+
+.btn {
+  font-size: 30px;
+  background-color: #242f9b;
+  font-weight: bold;
+  color: #dbdffd;
+  border-radius: 5px;
+  margin: 2px 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #f5f5f5;
+  color: #242f9b;
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    height: 370px;
+    width: 280px;
+    padding: 5px;
+  }
+}
